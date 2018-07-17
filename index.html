@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]>
+         <!-->
+            <html class="no-js">
+            <!--
+            
+            <![endif]-->
+         <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title></title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <!--MAIN CSS-->
+            <style>
+               body {
+               padding-top: 50px;
+               padding-bottom: 20px;
+               }
+            </style>
+            <style type="text/css">
+               li {font-size:150%} 
+            </style>
+            <style type="text/css">
+               <!--
+                  .tab { margin-left: 40px; }
+                  -->
+            </style>
+            <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="css/main.css">
+            <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+         </head>
+         <body>
+            <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an 
+               <strong>outdated</strong> browser. Please 
+               <a href="http://browsehappy.com/">upgrade
+               your browser</a> to improve your experience.
+            </p>
+            <![endif]-->
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="#">Cucumber
+                     </a>
+                  </div>
+                  <div id="navbar" class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav">
+                        <!--<li class="active"><a href="#">Home</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>-->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu
+                           <span class="caret"></span>
+                           </a>
+                           <ul class="dropdown-menu" role="menu">
+                              <li class="divider"></li>
+                              <li class="dropdown-header">Nav header</li>
+                              <li>
+                                 <a href="#">Separated link</a>
+                              </li>
+                              <li>
+                                 <a href="#">One more separated link</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <!--/.nav-collapse -->
+               </div>
+            </nav>
+            <div class="jumbotron">
+               <div class="container">
+                  <h1>Cucumber
+                     <img src="images/logo.png" alt="paxport" height="62" width="62">
+                     <img src="images/cucumber.png" alt="paxport" height="62" width="62">
+                  </h1>
+               </div>
+            </div>
+            <div id="introduction">
+            <div class="jumbotron">
+            <div class="container bg-success">
+               <h1>BDD: a refresher</h1>
+               <div class="col-md-12">
+                  <h2>BDD = Behaviour Driven Development</h2>
+                  <div>
+                     <h2>
+                        <p> Why should we care about using BDD? 
+                        <p>...because we're moving towards being a Product focused company that delivers what customers need.  BDD forces an outside in development process that requires you to think of the customer first, build the right software and close gaps in understanding</p>
+                        <p>In Test Driven Development (TDD), a developer writes a failing test - typically at a Unit or Integration test level. They then write the minimum viable code to make the test pass. The rationale is that lean software is developed that meets requirements</p>
+                        <p>In BDD = TDD extended. PO's, BA's, Testers and Developers collaborate to describe the requirements as 'Behaviours'. These behaviours are written as 
+                           <b>Scenarios</b> in a language called 
+                           <b>Gherkin</b>:
+                        </p>
+                        </p>
+                     </h2>
+                  </div>
+                  <div>
+                     <h3>
+                        <b>Feature: My new Feature
+                        <b>
+                        </br>
+                        <b>Given: I have an account setup</b>
+                        </br>
+                        <b>When: I have try to login</b>
+                        </br>
+                        <b>Then: I see the 'Welcome' page</b>
+                        <p>
+                        </p>
+                     </h3>
+                  </div>
+                  <div>
+                     <p>
+                        Scenarios and Gherkin are, deliberately, non-technical languages that all business users can understand.  The Testers *AND* Developers then convert Scenarios directly into tests, most commonly using the tool Cucumber.
+                     </p>
+                     <p>
+                     </p>
+                     <ul>
+                        <li>the test describes a behaviour at a level the business understands</li>
+                        <li>the test typically describes technology at the top of the stack - enforcing outside in development</li>
+                        <li>the test must have code written to make it pass</li>
+                        <li>the behaviours agreed by the team therefore translate into software that meets the stakeholders desires - build the right thing</li>
+                     </ul>
+                     </p>
+                     </h2>
+                  </div>
+                  <p>
+                  <h2>
+                     <b>The legacy of using BDD with Cucumber
+                     <b>
+                  </h2>
+                  </p>
+                  </br>
+                  <h4>
+                     <p style="text-align:center;">
+                        <img src="images/living_doc.png" alt="cucumber" height="500" width="500">
+                     </p>
+                     <div>
+                        <p>
+                        <li>living documentation - an 'executable specification'</li>
+                        </p>
+                        <p>
+                        <li>a legacy of acceptance tests to act as a regression suite for the completed software</li>
+                        </p>
+                        <li>a set of acceptance tests that everyone understands: scenarios</li>
+                        <p>
+                        <li>enforces a 'Ubiquitous Language': the business and technology people end up talking a similar language, closing gaps in understanding and mitigating risks of missing requirements</li>
+                        </p>
+                        </ul>
+                     </div>
+                  </h4>
+               </div>
+            </div>
+            <div id="introduction">
+            <div class="jumbotron">
+               <div class="container bg-info">
+                  <h1>BDD v Waterfall</h1>
+                  <p>
+                     <b>Waterfall:</b>
+                  </p>
+                  <div class="col-md-12">
+                     <p style="text-align:center;">
+                        <img src="images/waterfall_process.png" alt="cucumber" height="500" width="1000">
+                     </p>
+                     <p>
+                     <p>
+                     <p>
+                        <b>BDD:</b>
+                     </p>
+                     <p style="text-align:center;">
+                        <img src="images/bdd_process.png" alt="cucumber" height="500" width="1000">
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="introduction">
+            <div class="jumbotron">
+               <div class="container bg-success">
+                  <h1>What is Cucumber?</h1>
+                  <div class="col-md-12">
+                     <p>
+                     <h3> The mission statement from the developers of Cucumber:</h3>
+                     </p>
+                     <p>
+                        <b>
+                     <h2>To provide a language, a process, and a tool that would provide a single source of truth of software behavior for the audience of both non-technical and technical project members</h2>
+                     </b>
+                     </p>
+                     <ul>
+                        <li>put simply - an open source tool to help create automated acceptance tests</li>
+                        <p>
+                        <li>no dashboard or gui - simply a bunch of jars</li>
+                        <p>
+                        <li>we call them acceptance tests because they express what the software needs to do in order for the stakeholder to find it acceptable.</li>
+                        <p>
+                        <li>the tests are written 
+                           <b>collaboratively</b> between test, development and stakeholders: 3 Amigos
+                        </li>
+                        <p>
+                        <li>the test fails at the time of writing, because no code has been written yet, but it captures what the stakeholder cares about and gives everyone a clear signal as to what it will take to be done.</li>
+                        <p>
+                        <li>unit tests ensure you build the thing right, whereas acceptance tests ensure you build the right thing.</li>
+                        <p>
+                        <li>Cucumber tests interact directly with the developers’ code,
+                           but they’re written in a medium and language that business stakeholders
+                           can understand.
+                        </li>
+                     </ul>
+                     <p>In Cucumber
+                     <ul>
+                     <li>Test Suite = Feature</li>
+                     <li>Test Cases = Scenarios</li>
+                     <li>Test Steps = Steps</li>
+                     <li>Test Code = Step Definitions + support code</li>
+                     <p>
+                     </p>
+                     </p/>
+                     </br>
+                  </div>
+               </div>
+            </div>
+            <div id="introduction">
+            <div class="jumbotron">
+               <div class="container bg-info">
+                  <h1>How does Cucumber work?</h1>
+                  <div class="col-md-12">
+                     <p>When
+                        you run Cucumber, it reads in your specifications from plain-language text files called features, examines them
+                        for scenarios to test, and runs the scenarios against your system.
+                        </a>
+                     <p>Process representation:</p>
+                     <p style="text-align:center;">
+                        <img src="images/cucumber_stack.png" alt="cucumber" height="800" width="500">
+                     </p>
+                     </p>
+                     </br>
+                     <p>Feature file within an IDE:</p>
+                     <p style="text-align:center;">
+                        <img src="images/example_feature_file.png" alt="cucumber" height="1100" width="900">
+                     </p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="introduction">
+            <div class="jumbotron">
+               <div class="container bg-success">
+                  <h1>How does Cucumber work contd...</h1>
+                  <div class="col-md-12">
+                     <h2>
+                        <b>Typical Cucumber workflow:</b>
+                     </h2>
+                     </p>
+                     <p style="text-align:center;">
+                        <img src="images/cucumber-workflow.png" alt="cucumber" height="1000" width="900">
+                     <p>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div id="introduction">
+            <div class="jumbotron">
+               <div class="container bg-success">
+                  <h1>Why are we using Cucumber in the Test Team?</h1>
+                  <div class="col-md-12">
+                     <p>
+                     <p>Problem:</p>
+                     <ul>
+                        <li>large number of test cases to run per supplier</li>
+                        <li>had to pass in lots of test data - how?</li>
+                        <li>tests were opaque; not easy to see what they were testing</li>
+                        <li>lots of duplication & repetition</li>
+                     </ul>
+                     <p>Solution:</p>
+                     <ul>
+                        <li>cucumber lets us write tests which do what they say on the tin</li>
+                        <li>same Scenarios can be run against many suppliers</li>
+                        <li>Scenarios can use Data Tables to run many times with different data inputs (reducing duplication</li>
+                        <li>Scenarios can use parameters to pass in data at runtime</li>
+                        <li>Test Team familiarises with terminology and tooling used in BDD</li>
+                        <li>Cucumber reporting is clear and can easily highlight failures</li>
+                        <li>We can tag tests using bespoke tags such as @Smoke, @Regression, @Fast...and run suite accordingly</li>
+                     </ul>
+                     <h3>
+                        <p><b>Live examples.......</b></p>
+                        <a href="https://at-supplier-core.pax-legacy.uk/#"><b>GCP Jenkins Supplier Tests</b></a>
+                     </h3>
+                     </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="introduction">
+               <div class="jumbotron">
+                  <div class="container bg-info">
+                     <h1>Where next??</h1>
+                     <ul>
+                        <li>all Supplier Integration tests written in Cucumber format</li>
+                        <li>supplier tests written up front - ready to be run as and when dev is completed</li>
+                        <li>Generic Cucumber FAB Regression set in progress</li>
+                        <li>Fit these tests into the pipeline as an automated quality gate at UAT</li>
+                     </ul>
+                     <p style="text-align:center;">
+                        <img src="images/ci_flow.png" alt="cucumber" height="600" width="1100">
+                     <p>
+                     <p></p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- /container -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('
+               <script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
+               
+            </script>
+            <script src="js/vendor/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+               (function (b, o, i, l, e, r) {
+                  b.GoogleAnalyticsObject = l;
+                  b[l] || (b[l] =
+                     function () {
+                        (b[l].q = b[l].q || []).push(arguments)
+                     });
+                  b[l].l = +new Date;
+                  e = o.createElement(i);
+                  r = o.getElementsByTagName(i)[0];
+                  e.src = '//www.google-analytics.com/analytics.js';
+                  r.parentNode.insertBefore(e, r)
+               }(window, document, 'script', 'ga'));
+               ga('create', 'UA-XXXXX-X');
+               ga('send', 'pageview');
+            </script>
+         </body>
+      </html>
